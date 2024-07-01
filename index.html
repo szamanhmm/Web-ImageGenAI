@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageGenAI Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ImageGenAI Project</h1>
+        <div class="input-container">
+            <label for="prompt">Enter a prompt:</label>
+            <input type="text" id="prompt" placeholder="E.g., sunset over mountains" required>
+        </div>
+
+        <button id="generateBtn">Generate Image</button>
+        <div id="loading" class="loading" style="display: none;">Generating...</div>
+        <div id="image-container" style="display: none;">
+            <img id="generatedImage" alt="Generated Image">
+            <button id="downloadBtn" style="display: none;">Download Image</button>
+        </div>
+
+        <p id="error-message"></p>
+        <div id="history-container">
+            <h2>Recent Prompts:</h2>
+            <ul id="historyList"></ul>
+        </div>
+        
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
